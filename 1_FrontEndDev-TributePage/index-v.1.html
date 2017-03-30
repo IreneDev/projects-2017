@@ -17,7 +17,7 @@
   	box-shadow: 0px 13px 55px -4px rgba(0,0,0,0.75);
   }
   #large_hl {
-  	font-family: times, Times New Roman, times-roman, georgia, serif;
+  	font-family: times, Times New Roman, serif;
 		color: #1a3b86;
 		font-size: 81px;
 		line-height: 64px;
@@ -42,13 +42,19 @@
   	font-size: 16px;
   	font-weight: bold;
   }
+  .thumbnail {
+	margin-top: -20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #f5f5f5;
+  }
   h3 {
   	style="color: #1a3b86;
   }
   h3:hover {
   	color: #ff6a5a !important;
   }
-  h3.biofacrs-bars {
+  h3.biofacts-bars {
   	color: #1a3b86;
   	text-align: center;
   	text-transform: uppercase;
@@ -78,37 +84,40 @@
 		color: #fff;
 		font-size: 14px;
   }
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+  }
 </style>
 <body background="images/bg_digital.png">
 	<!-- for codepen https://raw.githubusercontent.com/IreneDev/projects-2017/master/1_FrontEndDev-TributePage/images/bg_digital.png -->
 	<div class="container">
-		<h1 class="page-header text-center" id="large_hl" style="	text-shadow: 1px 2px 3px #666;
-">Grace Hopper
+		<h1 class="page-header text-center" id="large_hl" style="	text-shadow: 1px 2px 3px #666;">Grace Hopper
 			<br><small id="small_hl" class="text-uppercase" style="text-shadow: initial;">The Pioneer of Computer Science</small>
 		</h1>
 		<div class="row">
-			<div class="col-xs-6">
-				<blockquote class="blockquote-reverse">
+	    <div class="thumbnail">
+	      <img class="img-responsive img-thumbnail" alt="Photo of young Grace Hopper" src="images/bg_grace.jpg">
+	      <!-- for codepen src="https://raw.githubusercontent.com/IreneDev/projects-2017/master/1_FrontEndDev-TributePage/images/bg_grace.png" -->
+	        <div class="caption">
+	          <blockquote class="blockquote-reverse center-block">
+							<p class="text-center">
+								If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.
+							</p>
+							<footer><cite title="Grace Hopper">Grace Hopper</cite></footer>
+						</blockquote>
+	        </div>
+      </div>
+        <!-- <blockquote class="blockquote-reverse">
 					<p>
 						Humans are allergic to change. They love to say, "We've always done it this way." I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.
 					</p>
 					<footer><cite title="Grace Hopper">Grace Hopper</cite></footer>
-				</blockquote><br><br><br>
-				<blockquote class="blockquote-reverse">
-					<p>
-						If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.
-					</p>
-					<footer><cite title="Grace Hopper">Grace Hopper</cite></footer>
-				</blockquote>
-			</div>
-			<div class="col-xs-6">
-				<img class="img-responsive img-thumbnail" alt="Photo of young Grace Hopper" src="images/bg_grace.png">
-				<!-- for codepen src="https://raw.githubusercontent.com/IreneDev/projects-2017/master/1_FrontEndDev-TributePage/images/bg_grace.png" -->
-			</div>
+				</blockquote><br><br><br> -->
 		</div> <!-- for .row -->
 		<br>
 		<div id="biofacts" class="text-justify">
-			<h3 class="biofacrs-bars">Mathematician and Programmer &#8658;</h3>
+			<h3 class="biofacts-bars">Mathematician and Programmer &#8658;</h3>
 			<div >
 				<p >
 					<strong>Grace Brewster Murray Hopper (1906 - 1992)</strong> was born in New York City. Hopper was her married surname. Her father was Walter Fletcher Murray, an insurance executive; and her mother was the mathematically talented Mary Campbell Van Horne. There were three children in the family 
@@ -117,7 +126,7 @@
 					(photo)</a>; Grace was the eldest. In 1934 she earned a Ph.D. in Mathematics at Yale University. 
 				</p>
 			</div>
-			<h3 class="biofacrs-bars">USA Navy Rear Admiral &#8658;</h3>
+			<h3 class="biofacts-bars">USA Navy Rear Admiral &#8658;</h3>
 			<div>
 				<p>
 					During World War II, Hopper was sworn into the United States Navy Reserve. In 1944 She was graduated at the Naval Reserve Midshipmen's School at Smith College in Northampton. Grace Hopper 
@@ -128,25 +137,25 @@
 					(photo)</a> looks on. Her rank was reassigned in 1985 to Rear Admiral.
 				</p>
 			</div>
-			<h3 class="biofacrs-bars">First Programmer of the Mark I &#8658;</h3>
+			<h3 class="biofacts-bars">First Programmer of the Mark I &#8658;</h3>
 			<div>
 				<p> 
 					In 1944 Hopper graduated and was assigned to the Bureau of Ships Computation Project at Harvard University as a lieutenant, junior grade. She served on <a style="text-decoration: none; color: #ff6a5a;" href="https://en.wikipedia.org/wiki/Harvard_Mark_I" target="_blank">the Mark I computer</a> programming staff headed by Howard H. Aiken. Hopper and Aiken coauthored three papers on the Mark I, also known as <strong>the Automatic Sequence Controlled Calculator</strong>.
 				</p>
 			</div>
-			<h3 class="biofacrs-bars">Creator of First Compiler A-0 &#8658;</h3>
+			<h3 class="biofacts-bars">Creator of First Compiler A-0 &#8658;</h3>
 			<div>
 				<p>
 					In 1949, Hopper became an employee of the Eckert–Mauchly Computer Corporation for developing <a style="text-decoration: none; color: #ff6a5a;" href="https://en.wikipedia.org/wiki/UNIVAC_I" target="_blank">the UNIVAC I</a>. She recommended that a new programming language be developed using entirely English words but it was not accepted for 3 years. By 1950s, when the company was taken over by the Remington Rand corporation her original compiler work was done and it was known as <a style="text-decoration: none; color: #ff6a5a;" href="https://en.wikipedia.org/wiki/A-0_System" target="_blank">the A-0</a>.
 				</p>
 			</div>
-			<h3 class="biofacrs-bars">"Mother of COBOL" &#8658;</h3>
+			<h3 class="biofacts-bars">"Mother of COBOL" &#8658;</h3>
 			<div>
 				<p>
 					In 1959 Hopper served as a technical consultant (photo) to the committee that defined the new language <a style="text-decoration: none; color: #ff6a5a;" href="https://en.wikipedia.org/wiki/COBOL" target="_blank">COBOL</a>. She developed validation software for COBOL and its compiler as part of a COBOL standardization program for the entire Navy. She also took over responsibility for standards testing of computer components and systems. Today these roles are carried out by the National Institute of Standards and Technology.
 				</p>
 			</div>
-			<h3 class="biofacrs-bars">Author of the term "debugging" &#8658;</h3>
+			<h3 class="biofacts-bars">Author of the term "debugging" &#8658;</h3>
 			<div>
 				<p>
 					The Navy promotes the idea that it was Hopper that squashed the first computer bug. There is an actual 
