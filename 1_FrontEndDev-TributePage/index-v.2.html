@@ -26,18 +26,15 @@
   	background-repeat: no-repeat;
     background-position: center top;
     min-height: 660px;
-    margin-top: -50px;
     }
   #left {
   	min-height: 660px;
-  	margin-top: -50px;
   }
   #title {
-  	font-size: 57px;
+  	font-size: 44px;
   	font-weight: bold;
   	line-height: 64px;
-	  letter-spacing: -1px;
-	  margin-top: 180px;
+	  margin-top: -20px;
   }
   #subtitle {
   	font-family: Gill Sans, Verdana;
@@ -46,8 +43,19 @@
 		letter-spacing: 1px;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-top: 10px;
+		margin-top: 40px;
 		margin-right: -10px;
+  }
+  #subtitle-v2 {
+    font-family: Gill Sans, Verdana;
+    font-size: 8px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 130px;
+    margin-right: -10px;
+    color: #52658F;
   }
   .subtitle-sub {
   	font-family: Gill Sans, Verdana;
@@ -56,7 +64,6 @@
   	letter-spacing: 3px;
   	font-weight: bold;
 		text-transform: uppercase;
-		text-align: center;
   }
   #header-dot {
     position: relative;
@@ -75,53 +82,50 @@
   }
 /*navigation*/
   .navbar {
-  	background-color: #f7f5e6;
-  	width: 91px; 
+  	background-color: #333a56;
+    max-height: 200px;
   }
   .navbar-header {
-  	width: 70px;
+    background-color: #333a56;
+    max-height: 60px;
+
   }
   .navbar-toggle {
   	background-color: #333a56;
-  }
-  ul {
-    background-color: #f7f5e6;
-  }
-  ul:hover li:hover {
-  	background-color: #52658F;
-  	border-radius: 5px;
+    max-height: 48px;
   }
   /*add style to the items of menu: childhood, education etc*/
   li a {
-    border: 2px solid #333a56;
-    font-weight: bold;
-    color: #333a56 !important;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-top: 3px;
+    color: #f7f5e6 !important;
+    background-color: #333a56;
+    font-family: Gill Sans, Verdana;
+    font-size: 13px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
   }
   li:hover a:hover {
-  	background-color: #52658F;
-  	color: #f7f5e6 !important;
-  	border: none;	
+  	color: #52658F !important;
   }
-  .click-me:hover {
-  	color: #f7f5e6;
-  	background-color: #52658F;
-
-  }
-  .click-me {
+  .click-me:link {
     border-radius: 100%;
     background-color: #f7f5e6;
     border: 1px solid #52658F;
+    width: 40px;
+    color: #52658F;
   }
-   /*change colour of BARS into #52658F inside of icon-bar*/ 
+  .click-me:hover {
+    color: #f7f5e6;
+    background-color: #52658F;
+  }
+/*change colour of BARS into #52658F inside of icon-bar*/ 
   .navbar-default .navbar-toggle .icon-bar {
   	background-color: #f7f5e6;
   }
   /*change color for menu-bar when :HOVER effect*/
   .navbar-default:hover .navbar-toggle:hover {
-  	background-color: #52658F;
+  	/*background-color: #52658F;*/
   }
 /*life, education, career sections*/
   .title-section {
@@ -131,7 +135,7 @@
 		letter-spacing: 4px;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-top: 30px;
+		margin-top: 65px;
 		text-align: center;
 		color: #52658F;
 	}
@@ -177,17 +181,14 @@
       </div>       
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li class="hidden">
-              <a class="page-scroll" href="#page-top"></a>
+          <li>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse" href="#life">Early Life</a>
           </li>
           <li>
-              <a class="page-scroll" href="#life">Life</a>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse" href="#education">Education</a>
           </li>
           <li>
-              <a class="page-scroll" href="#education">Education</a>
-          </li>
-          <li>
-              <a class="page-scroll" href="#career">Career</a>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse" href="#career">Career</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -199,12 +200,12 @@
 			<div class="row">
 				<!-- Right side of Main section-->
 				<div class="col-xs-6 pull-right img-responsive" id="right">
-					<p id="subtitle" style="color:white;margin-left:-10px;">Computer Science</p> 
+					<p id="subtitle" style="color:white;margin-left:-10px;"></p> 
 	        <!-- Blockquote on Right side of Main section-->
 					<div id="header-dot">
 						<div id="header-dot-content">
 							<blockquote class="blockquote">
-								<p style="color:#ffffff;">
+								<p style="color:#ffffff; text-align: left;">
 									If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.
 								</p>
 								<footer><cite title="Grace Hopper">Grace Hopper</cite></footer>
@@ -213,38 +214,38 @@
 					</div> <!-- for #header-dot  -->	
 				</div> <!-- for #right side of Main section-->
 			  <!-- Left side of Main section-->
-				<div class="col-xs-6 pull-left" id="left">
-				  <p id="subtitle" class="text-right">Pioneer of</p>
-					<p id="title" class="text-center">Grace Hopper</p><br>
+				<div class="col-xs-6 pull-left text-left" id="left">
+				  <p id="subtitle"></p>
+          <p id="subtitle-v2">Computer Scientist</p>
+					<p id="title">Grace Hopper</p><br>
 					<p class="subtitle-sub">Mathematician</p>
 					<p class="subtitle-sub">Navy Admiral</p>
-					<p class="subtitle-sub">"Mother of COBOL"</p>
-					<p class="subtitle-sub">Created Mark I</p>
-					<p class="subtitle-sub">Built Compiler A-0</p>
+					<p class="subtitle-sub">Mother of COBOL</p>
+					<p class="subtitle-sub">Built Mark I</p>
+					<p class="subtitle-sub">Created Compiler</p>
 					<p class="subtitle-sub">Coined debugging</p>	
+
+          <a class="btn btn-default page-scroll click-me center-block" href="#life"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 15px;"></span></a>
 				</div> <!-- for #left side of Main section -->
       </div> <!-- for .row -->
     </div> <!-- for .container-fluid of Main section-->
   </section> <!-- for .main-section -->
-  <hr>
+
 
   <div class="col-xs-12 text-center">
-  	<a class="btn btn-default page-scroll click-me" href="#life"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 15px;"></span></a>
-  </div><br>
-
-  <hr style="margin-top: 10px;">
+  	
+  </div><br><br><br>
 	<!-- Life Section -->
   <section id="life" class="life-section">
     <div class="container">
   		<div class="row">
         <div class="col-xs-12">
 					<p class="title-section">Early Life</p>
-					<hr>
           <p>
           	<strong>Grace Brewster Murray Hopper (1906 - 1992)</strong> was born in New York City. Hopper was her married surname. Her father was Walter Fletcher Murray, an insurance executive; and her mother was the mathematically talented Mary Campbell Van Horne Murray. There were three children in the family; Grace was the eldest. Grace was a big baby. She was 33 lbs. at 9 months! (And turned out to be a skinny adult.)
           </p>
           <figure class="figure">
-          	<img src="images/image.jpg" class="figure-img img-fluid img-responsive img-thumbnail center-block" alt="Walter (father), Grace (about 5 y.o.), little sister Mary and Mary (mother) Fletcher.">
+          	<img src="images/image.jpg" class="figure-img img-fluid img-responsive img-thumbnail c" alt="Walter (father), Grace (about 5 y.o.), little sister Mary and Mary (mother) Fletcher.">
           	<figcaption class="figure-caption text-center">Walter (father), Grace (about 5 y.o.), little sister Mary and Mary (mother) Fletcher
           	</figcaption>
           </figure>
@@ -257,14 +258,12 @@
       </div>
     </div>
   </section>
-  <hr>
   <!-- Education Section -->
   <section id="education" class="education-section">
     <div class="container" style="background-color:#e8e8e8">
       <div class="row">
         <div class="col-xs-12">
         	<p class="title-section">Education</p>
-        	<hr>
         	<p>
         		<strong>College</strong>. In 1924, Grace matriculated at Vassar College, a private liberal arts college in Poughkeepsie, New York. Aged 17, Grace had already decided to major in mathematics. Her professors noticed she was unusually skilled at explaining difficult concepts in math and physics to other students. Grace graduated in 1928, aged 21, with a Bachelor of Arts degree in mathematics and physics.
         	</p>
@@ -287,14 +286,12 @@
       </div>
     </div>
   </section>
-  <hr>
   <!-- Career Section -->
   <section id="career" class="career-section">
     <div class="container" style="background-color:#e8e8e8">
       <div class="row">
         <div class="col-xs-12">
         	<p class="title-section">Career</p>
-        	<hr>
         </div>
       </div>
     	<div class="row">
@@ -336,7 +333,7 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<footer class="myFooter text-center">&copy; 2017 Tribute Page about Grace Hopper &nbsp;<span class="separator">|</span>  &nbsp; &nbsp;Design by<a href="#"> iRene</a>
+			<footer class="myFooter text-center">&copy; 2017 Tribute Page &nbsp;<span class="separator">|</span>  &nbsp; &nbsp;Design by<a href="#"> iRene</a>
 			</footer>
 		</div>
 </div>
