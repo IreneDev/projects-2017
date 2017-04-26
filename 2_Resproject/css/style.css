@@ -15,7 +15,6 @@ body {
 .main-header #logo {
 	width: 45%;
 	margin: 10px 0;
-
 }
 #content {
 	width: 70%;
@@ -85,7 +84,8 @@ h2 {
 }
 #content a.readmore {
 	display: block;
-	float: #ffffff;
+	float: right;
+	color: #ffffff;
 	padding: 5px 9px;
 	background: #c13046;
 	border-radius: 5px;
@@ -113,3 +113,30 @@ footer p {
 	padding: 10px 0 0 0;
 	text-align: center;
 }
+
+/*Tablet/iPads (Portrait and Landscapes)*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	#container {
+		width: 95%;
+	}
+	.main-header img#logo {
+		margin: auto;
+		display: block;
+		width: 65%;
+	}
+	#content {
+		width: 100%;
+		float: none;
+	}
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+	#sidebar .block {
+		margin-left: 0;
+	}
+}
+
+
+
+
