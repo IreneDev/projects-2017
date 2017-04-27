@@ -15,11 +15,14 @@ body {
 .main-header #logo {
 	width: 45%;
 	margin: 10px 0;
+	display: block;
+	transition: width 2s;
 }
 #content {
 	width: 70%;
 	float: left;
 	overflow: auto;
+	transition: width 1s;
 }
 #sidebar {
 	width: 30%:
@@ -123,6 +126,7 @@ footer p {
 		margin: auto;
 		display: block;
 		width: 65%;
+		transition: width 2s;
 	}
 	#content {
 		width: 100%;
@@ -134,6 +138,10 @@ footer p {
 	}
 	#sidebar .block {
 		margin-left: 0;
+	}
+	.main-header .main-nav {
+		display: block;
+		transmition: height 1s;
 	}
 }
 
@@ -152,6 +160,7 @@ footer p {
 		display: block;
 		overflow: hidden;
 		width: 99%;
+		transition: height 1s;
 	}
 	.main-header .main-nav ul {
 		padding: 2% 1%;
