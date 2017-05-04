@@ -3,3 +3,9 @@
 	background: #ca2129;
 	margin-bottom: 0;
 }
+.jumbotron {
+	background: url("../images/waterdrop.jpg") no-repeat 50%;
+	height: 350px;
+	padding: 0; 
+	color: #ffffff;
+}
