@@ -69,6 +69,14 @@ a.readmore:hover {
 	background-color: #ca2129 !important;
 	border-color: #ca2129 !important;
 }
+.grey-list .list-group-item.active, .grey-list .list-group-item.active:focus, .grey-list .list-group-item.active:hover {
+	background-color: #f4f4f4 !important;
+	border-color: #cccccc !important;
+	color: #666666 !important;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
+    color: #666666 !important;
+}
 
 
 
