@@ -24,6 +24,27 @@
 	border-radius: 0;
 	margin: 0;
 }
+/*style Login and Register*/
+li.login a {
+	background: #ca2129;
+	margin-bottom: -10px !important;
+	color: #ffffff !important;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-top: 0.1px solid #000000;
+}
+li.login a:hover {
+	background: #cccccc !important;
+}
+li.register a {
+	background: #2f98cc;
+	color: #ffffff !important;
+	border-top: 0.1px solid #000000;
+	border-left: 0.1px solid #000000;
+}
+li.register a:hover {
+	background: #cccccc !important;
+}
 /*Learn columns*/
 .bluebox, .redbox {
 	background-color: #2e98cc;
