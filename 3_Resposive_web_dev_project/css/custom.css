@@ -100,6 +100,13 @@ a.readmore:hover {
 .list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
     color: #666666 !important;
 }
+/*Footer*/
+footer {
+	text-align: center;
+	padding: 20px 0;
+	font-weight: bold;
+	background-color: #f4f4f4;
+}
 
 
 
