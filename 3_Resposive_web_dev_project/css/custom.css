@@ -65,6 +65,10 @@ a.readmore:hover {
 	background-color: #2e98cc;
 	color: #ffffff;
 }
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+	background-color: #ca2129 !important;
+	border-color: #ca2129 !important;
+}
 
 
 
