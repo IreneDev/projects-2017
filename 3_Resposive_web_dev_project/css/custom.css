@@ -65,10 +65,12 @@ a.readmore:hover {
 	background-color: #2e98cc;
 	color: #ffffff;
 }
+/*list group first*/
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
 	background-color: #ca2129 !important;
 	border-color: #ca2129 !important;
 }
+/*list group second, custom content*/
 .grey-list .list-group-item.active, .grey-list .list-group-item.active:focus, .grey-list .list-group-item.active:hover {
 	background-color: #f4f4f4 !important;
 	border-color: #cccccc !important;
