@@ -9,3 +9,50 @@
 	padding: 0; 
 	color: #ffffff;
 }
+.navbar {
+	border-radius: 0;
+	margin: 0;
+}
+.bluebox, .redbox {
+	background-color: #2e98cc;
+	overflow: hidden;
+	height: 230px;
+	color: #ffffff;
+	padding: 0 10px;
+	font-size: 120%;
+}
+.redbox {
+	background-color: #ca2129;
+}
+.bluebox a.readmore, .redbox a.readmore {
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+	background: #2b8cbc;
+	padding: 10px 15px;
+	color: #ffffff;
+}
+.redbox a.readmore {
+	background: #bf1e26;
+}
+.bluebox a.readmore:hover {
+	background: #20749d;
+}
+a.readmore:hover {
+	background: #86161b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
