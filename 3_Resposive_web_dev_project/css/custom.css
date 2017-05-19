@@ -1,6 +1,12 @@
 body {
 	margin-top: 50px;
 }
+.pad-top20 {
+	padding-top: 30px;
+}
+.well {
+	background: #ffffff !important;
+}
 .top-bar {
 	height: 5px;
 	background: #ca2129;
@@ -78,9 +84,6 @@ a.readmore:hover {
 	background: #86161b;
 }
 /*Whats happening in the world*/
-.pad-top20 {
-	padding-top: 30px;
-}
 /*media object*/
 .media-body {
 	font-size: 100%;
@@ -110,7 +113,35 @@ footer {
 	font-weight: bold;
 	background-color: #f4f4f4;
 }
-
+/*blog.html*/
+#blog img {
+	margin: 5px 0;
+	border: 1px solid #cccccc;
+	padding: 3px;
+	border-radius: 5px;
+	width: 100%;
+}
+#blog a.readmore {
+	background: #2b8cbc;
+	padding: 10px 15px;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	margin-top: 20px !important;
+	border-radius: 5px;
+}
+#blog a.readmore:hover {
+	background: #20749d;
+}
+small {
+	padding: 5px;
+	background: #f4f4f4;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	width: 100%;
+	display: block;
+	margin: 5px 0 10px 0;
+}
 
 
 
