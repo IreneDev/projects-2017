@@ -33,8 +33,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="about.html">About</a></li>
             <li class="dropdown">
               <a href="innovate.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -75,23 +75,37 @@
             <img src="images/teamwork.jpg" alt="teamwork">
           </div> <!-- .well -->
         </div> <!-- .col-md-8 -->
-      </div> <!-- .row .pad-top20 -->
+<!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="well grey-well">
+            <h3>Quick contact</h3>
+            <form>
+              <div class="form-group">
+                <label for="InputName">Name</label>
+                <input type="text" class="form-control" id="InputName" placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Send</button>
+            </form>
+          </div><!-- .well .grey-well -->
+          <div class="list-group">
+            <a href="index.html" class="list-group-item">Home</a>
+            <a href="about.html" class="list-group-item active">About</a>
+            <a href="innovate.html" class="list-group-item">Innovate</a>
+            <a href="blog.html" class="list-group-item">Blog</a>
+            <a href="contact.html" class="list-group-item">Contact Us</a>
+          </div> <!-- .list-group--> 
+        </div> <!-- .col-md-4 -->
+      </div> <!-- .row pad-top20 -->
     </div> <!-- .container -->
     
-    <!-- sidebar -->
-    <div class="row pad-top20">
-      <div class="col-md-4">
-        <div class="list-group">
-          <a href="index.html" class="list-group-item">
-            Home
-          </a>
-          <a href="about.html" class="list-group-item active">About</a>
-          <a href="innovate.html" class="list-group-item">Innovate</a>
-          <a href="blog.html" class="list-group-item">Blog</a>
-          <a href="contact.html" class="list-group-item">Contact Us</a>
-        </div> <!-- .list-group--> 
-      </div> <!-- .col-md-4 -->
-    </div> <!-- .row pad-top20 -->
     <footer>
       Copyright &copy; 2017, Clean&Clear by iRene
     </footer>

@@ -7,6 +7,9 @@ body {
 .well {
 	background: #ffffff !important;
 }
+.grey-well {
+	background: #f4f4f4 !important;
+}
 .top-bar {
 	height: 5px;
 	background: #ca2129;
