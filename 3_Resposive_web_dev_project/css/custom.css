@@ -161,6 +161,9 @@ iframe.gmap {
 #tooltip1:hover, #tooltip2:hover {
 	text-decoration: none;
 }
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+	width: 100%;
+}
 
 
 
