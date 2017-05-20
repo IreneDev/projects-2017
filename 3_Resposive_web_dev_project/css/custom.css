@@ -165,6 +165,11 @@ iframe.gmap {
 	width: 100%;
 }
 
+.panel-default>.grey-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
 
 
 
