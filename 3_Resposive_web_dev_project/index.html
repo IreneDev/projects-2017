@@ -9,11 +9,20 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap js-->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#tooltip1").tooltip("trigger");
+      });
+      $(document).ready(function(){
+        $("#tooltip2").tooltip("trigger");
+      });
+    </script>
     <!-- Bootstrap main CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
   </head>
+
   <body>
     <!-- NAVBAR from bootstrap template -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -80,7 +89,9 @@
           <div class="bluebox">
             <h3><span class="glyphicon glyphicon-book"> Learn</span></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
+              Lorem ipsum dolor sit amet, 
+<!-- Tooltip from javascript Bootstrap -->    
+              <a href="#" id="tooltip1" data-toggle="tooltip" title="This is the first tooltip">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
             </p>
             <a class="readmore" href="#">Read more</a>
           </div>
@@ -89,7 +100,8 @@
           <div class="redbox">
             <h3><span class="glyphicon glyphicon-eye-open"> Create</span></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+              <a href="#" id="tooltip2" data-toggle="tooltip" title="This is the second tooltip">enim ad minim</a> veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
             </p>
             <a class="readmore" href="#">Read more</a>
           </div>
